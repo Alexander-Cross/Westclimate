@@ -1,0 +1,35 @@
+@media screen and (max-width: 1355px) {
+    .container {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 969px) {
+    .header-menu {
+        display: none;
+    }
+    #burger {
+        display: block;
+    }
+    .header-messengers a {
+        margin-left: 26px;
+    }
+    .header-messengers svg {
+        height: 24px;
+        width: 24px;
+    }
+}
+@media screen and (max-width: 659px) {
+    .header-email {
+        display: none;
+    }
+    .header-messengers {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 459px) {
+    .container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
