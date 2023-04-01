@@ -102,7 +102,7 @@ window.addEventListener('load', () => {
     orderCallForm.onsubmit = async (e) => {
         e.preventDefault();
         try {
-            let response = await fetch('https://webhook.site/cc572241-7154-41b0-8fd4-9f8747d39b87', {
+            let response = await fetch('https://webhook.site/442c06ef-b200-44c2-8436-9552a9d8ea32', {
                 method: 'POST',
                 body: new FormData(orderCallForm)
             });
@@ -290,7 +290,7 @@ window.addEventListener('load', () => {
             data.append('amount', one_click_good.amount);
             data.append('price', one_click_good.price);
             console.log(data);
-            let response = await fetch('https://webhook.site/cc572241-7154-41b0-8fd4-9f8747d39b87', {
+            let response = await fetch('https://webhook.site/442c06ef-b200-44c2-8436-9552a9d8ea32', {
                 method: 'POST',
                 body: data
             });
