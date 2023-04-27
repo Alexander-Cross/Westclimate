@@ -18,6 +18,9 @@
     background: url("../images/main_page/main-slider/main_4_fon.png") center;
     background-size: cover;
 }
+#main-screen-swiper-slide-img-3, #main-screen-swiper-slide-img-2 {
+    display: none;
+}
 .main-screen-swiper {
     overflow: hidden;
 }
@@ -105,6 +108,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 24px;
+}
+.service-block-wrapper {
+    width: 100%;
 }
 a.service-block {
     display: block;
@@ -280,6 +286,7 @@ a.service-block:hover {
 }
 .recommended-good-adv-icon {
     display: flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     background: var(--green);
@@ -440,7 +447,7 @@ a.action-block:hover {
     margin-right: 24px;
 }
 .work {
-    max-width: 306px;
+    width: 306px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -450,7 +457,6 @@ a.action-block:hover {
 .work-photo {
     height: 419px;
     border-radius: 5px 5px 0 0;
-    background-size: cover;
 }
 .work-description {
     background: var(--dark-fon-lighter);
@@ -465,45 +471,59 @@ a.action-block:hover {
 }
 #our-works-all-1 {
     background: url("../images/main_page/our_works/cond_1.png") center;
+    background-size: cover;
 }
 #our-works-all-2 {
     background: url("../images/main_page/our_works/vent_2.png") center;
+    background-size: cover;
 }
 #our-works-all-3 {
     background: url("../images/main_page/our_works/cond_3.png") center;
+    background-size: cover;
 }
 #our-works-all-4 {
     background: url("../images/main_page/our_works/vent_4.png") center;
+    background-size: cover;
 }
 #our-works-cond-1 {
     background: url("../images/main_page/our_works/cond_1.png") center;
+    background-size: cover;
 }
 #our-works-cond-2 {
     background: url("../images/main_page/our_works/cond_2.png") center;
+    background-size: cover;
 }
 #our-works-cond-3 {
     background: url("../images/main_page/our_works/cond_3.png") center;
+    background-size: cover;
 }
 #our-works-cond-4 {
     background: url("../images/main_page/our_works/cond_4.png") center;
+    background-size: cover;
 }
 #our-works-vent-1 {
     background: url("../images/main_page/our_works/vent_1.png") center;
+    background-size: cover;
 }
 #our-works-vent-2 {
     background: url("../images/main_page/our_works/vent_2.png") center;
+    background-size: cover;
 }
 #our-works-vent-3 {
     background: url("../images/main_page/our_works/vent_3.png") center;
+    background-size: cover;
 }
 #our-works-vent-4 {
     background: url("../images/main_page/our_works/vent_4.png") center;
+    background-size: cover;
 }
 #our-works-heat-1 {
     background: url("../images/main_page/our_works/heat_1.png") center;
+    background-size: cover;
 }
 #our-works-heat-2 {
     background: url("../images/main_page/our_works/heat_2.png") center;
+    background-size: cover;
 }
 .news-slide {
     max-width: 416px;
@@ -517,26 +537,32 @@ a.action-block:hover {
 }
 .news-img {
     height: 281px;
-    background-size: cover;
     margin-bottom: 22px;
+    border-radius: 12px;
 }
 #news-1 {
     background: url("../images/main_page/news/news_1.png") center;
+    background-size: cover;
 }
 #news-2 {
     background: url("../images/main_page/news/news_2.png") center;
+    background-size: cover;
 }
 #news-3 {
     background: url("../images/main_page/news/news_3.png") center;
+    background-size: cover;
 }
 #news-4 {
     background: url("../images/main_page/news/news_4.png") center;
+    background-size: cover;
 }
 #news-5 {
     background: url("../images/main_page/news/news_5.png") center;
+    background-size: cover;
 }
 #news-6 {
     background: url("../images/main_page/news/news_6.png") center;
+    background-size: cover;
 }
 .news-date {
     margin-bottom: 13px;
@@ -550,6 +576,14 @@ a.action-block:hover {
 }
 .news-text {
     margin-bottom: 15px;
+    height: 57px;
+    overflow: hidden;
+}
+.text-itself {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .news-action-link {
     text-decoration: none;

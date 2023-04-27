@@ -39,8 +39,8 @@ window.addEventListener('load', () => {
     // goods-row-swiper
     const goodsRowSwiper = new Swiper ('.goods-row-swiper', {
         // Optional parameters
-        slidesPerView: 4,
-        slidesPerGroup: 4,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetween: 24,
         loop: true,
         speed: 700,
@@ -62,12 +62,26 @@ window.addEventListener('load', () => {
         autoplay: {
             delay: 6000,
         },
+        breakpoints: {
+            1260: {
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+            },
+            1024: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            691: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            }
+        }
     });
     // popular-sections-swiper
     const popularSectionsSwiper = new Swiper ('.popular-sections-swiper', {
         // Optional parameters
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         spaceBetween: 24,
         loop: true,
         speed: 700,
@@ -89,6 +103,16 @@ window.addEventListener('load', () => {
         // autoplay: {
         //     delay: 6000,
         // },
+        breakpoints: {
+            861: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            540: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            }
+        }
     });
 
 
@@ -220,8 +244,8 @@ window.addEventListener('load', () => {
     // actions-swiper
     const actionsSwiper = new Swiper ('.actions-swiper', {
         // Optional parameters
-        slidesPerView: 2,
-        slidesPerGroup: 2,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         loop: true,
         speed: 700,
         spaceBetween: 24,
@@ -240,6 +264,12 @@ window.addEventListener('load', () => {
             nextEl: '.actions-swiper-next',
             prevEl: '.actions-swiper-prev',
         },
+        breakpoints: {
+            691: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            }
+        }
     });
 
     // reviews-swiper
@@ -288,12 +318,11 @@ window.addEventListener('load', () => {
         ourWorksButtons[ourWorksSlideIndex].className += " active";
     }
 
-
     // news-swiper
     const newsSwiper = new Swiper ('.news-swiper', {
         // Optional parameters
-        slidesPerView: 3,
-        slidesPerGroup: 3,
+        slidesPerView: 1,
+        slidesPerGroup: 1,
         loop: true,
         speed: 700,
         spaceBetween: 24,
@@ -312,6 +341,16 @@ window.addEventListener('load', () => {
             nextEl: '.news-swiper-next',
             prevEl: '.news-swiper-prev',
         },
+        breakpoints: {
+            860: {
+                slidesPerView: 3,
+                slidesPerGroup: 3,
+            },
+            641: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+            }
+        }
     });
 
 
