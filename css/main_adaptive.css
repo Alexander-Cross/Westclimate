@@ -144,9 +144,11 @@
     .phone-section {
         margin-right: 0;
     }
+
     .header-bar {
         display: none;
     }
+
     .header-bar-mobile {
         position: fixed;
         left: 0;
@@ -160,77 +162,101 @@
         justify-items: center;
         box-shadow: 0 -1px 3px #e0e0e0;
     }
+
     .header-bar-option {
         margin-left: 0;
         border-radius: 0;
         height: 54px;
     }
+
     .basket.header-bar-option {
         width: 100%;
         border-radius: 0;
         height: 54px;
         padding: 0;
     }
+
     .header-bar-mobile .header-basket-amount {
         bottom: -6px;
     }
+
     .favourites.header-bar-option {
         border-left: 1px solid #e0e0e0;
         border-right: 1px solid #e0e0e0;
     }
+
     .header-bar-mobile a {
         width: 100%;
         box-sizing: border-box;
     }
+
     .header-bar-amount {
         bottom: 10px;
         left: calc(50% + 3px);
     }
+
     #main-screen-slide-3 {
         background-position: 40% center;
     }
+
     a.service-block {
         height: 340px;
     }
-    .about-section{
+
+    .about-section {
         padding: 9px 15px;
     }
+
     .popular-section-image img {
         max-height: 162px;
         max-width: 242px;
     }
+
     .recommended-goods-swiper {
         max-width: 840px;
     }
+
     .recommended-good-flying-photo {
         right: -85px;
     }
+
     .our-contacts h2.section-header {
         text-align: center;
     }
+
     .contacts-info {
         flex-direction: column;
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
+
     .contact-info-line-start {
         min-width: 290px;
     }
+
     .contacts-info-map {
         width: 100%;
     }
+
     .contacts-info-text {
         margin-bottom: 50px;
     }
+
     .our-contacts-action {
         text-align: center;
     }
+
     .footer-nav {
         flex-direction: column;
     }
+
     .footer-nav-col {
         width: 200px;
+    }
+
+    #opened-catalog .container {
+        grid-template-columns: 280px 1fr;
     }
 }
 /*main point*/
