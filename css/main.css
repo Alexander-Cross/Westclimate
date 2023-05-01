@@ -832,7 +832,7 @@ button.main-action {
 .sub-categories-slides {
     margin: 15px 30px;
     max-height: 80vh;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .sub-categories-slide {
     display: grid;
