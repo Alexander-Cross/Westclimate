@@ -563,6 +563,9 @@ button.main-action {
 .header-popular-option:visited {
     color: var(--text);
 }
+.header-bar-mobile {
+    display: none;
+}
 .header-bar {
     display: flex;
     align-items: center;
@@ -581,6 +584,9 @@ button.main-action {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header-bar-option svg {
+    fill: var(--text);
 }
 .header-bar-option:first-child {
     margin-left: 0;
