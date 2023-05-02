@@ -921,6 +921,9 @@ a.second-subcategory:visited {
     padding: 14px 0;
     border-bottom: 1px solid #ececec;
 }
+.nav-link.nav-expand-link {
+    justify-content: space-between;
+}
 #opened-mobile-catalog a {
     text-decoration: none;
     color: var(--text);
@@ -978,9 +981,6 @@ a.second-subcategory:visited {
 .m-icon-and-category-name {
     display: flex;
     align-items: center;
-}
-.nav-expand-link {
-    justify-content: space-between;
 }
 #search-results {
     position: absolute;
