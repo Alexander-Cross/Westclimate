@@ -918,7 +918,7 @@ a.second-subcategory:visited {
 #opened-mobile-catalog .nav-link{
     display: flex;
     box-sizing: border-box;
-    padding: 10px 0;
+    padding: 14px 0;
     border-bottom: 1px solid #ececec;
 }
 #opened-mobile-catalog a {
@@ -953,17 +953,11 @@ a.second-subcategory:visited {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 10px;
+    margin-right: 12px;
     width: 23px;
 }
 .m-category-icon svg {
     fill: var(--action-dark);
-}
-.nav-expand-link::after {
-    content: url("data:image/svg+xml;charset=UTF-8,<svg width='6' height='11' viewBox='0 0 163 287' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M6.24001 5.69333C13.5317 -1.59307 25.3493 -1.59307 32.6413 5.69333L157.084 130.141C164.376 137.428 164.376 149.251 157.084 156.537L32.6413 280.985C25.3496 288.272 13.532 288.272 6.24001 280.985C-1.05172 273.694 -1.05172 261.876 6.24001 254.584L117.485 143.339L6.24001 32.0933C-1.05172 24.8016 -1.05172 12.984 6.24001 5.69199V5.69333Z' fill='%23080808'/></svg>");
-    justify-content: space-between;
-    position: absolute;
-    right: 0;
 }
 .nav-expand .nav-expand-content .nav-back-link::before {
     content: url("data:image/svg+xml;charset=UTF-8,<svg width='6' height='11' viewBox='0 0 163 287' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M156.76 281.307C149.468 288.593 137.651 288.593 130.359 281.307L5.916 156.859C-1.376 149.572 -1.376 137.749 5.916 130.463L130.359 6.015C137.65 -1.272 149.468 -1.272 156.76 6.015C164.052 13.306 164.052 25.124 156.76 32.416L45.515 143.661L156.76 254.907C164.052 262.198 164.052 274.016 156.76 281.308V281.307Z' fill='%23080808'/></svg>");
@@ -972,6 +966,21 @@ a.second-subcategory:visited {
 .nav-expand.active>.nav-expand-content {
     transform: translateX(0);
     visibility: visible;
+}
+.arrow-icon svg{
+    fill: var(--text);
+}
+.arrow-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-icon-and-category-name {
+    display: flex;
+    align-items: center;
+}
+.nav-expand-link {
+    justify-content: space-between;
 }
 #search-results {
     position: absolute;
