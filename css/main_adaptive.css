@@ -139,6 +139,9 @@
     .contacts-info-map {
         width: 45%;
     }
+    #opened-catalog .container {
+        grid-template-columns: 1fr 3fr;
+    }
 }
 @media screen and (max-width: 1119px) {
     .phone-section {
@@ -150,17 +153,7 @@
     }
 
     .header-bar-mobile {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        z-index: 100;
-        background: var(--background);
-        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        box-shadow: 0 -1px 3px #e0e0e0;
     }
 
     .header-bar-option {
@@ -253,10 +246,6 @@
 
     .footer-nav-col {
         width: 200px;
-    }
-
-    #opened-catalog .container {
-        grid-template-columns: 1fr 3fr;
     }
 }
 /*main point*/
@@ -374,6 +363,22 @@
     }
 }
 @media screen and (max-width: 990px) {
+    #catalog-button {
+        display: none;
+    }
+    #opened-mobile-catalog {
+        display: unset;
+    }
+    #mobile-catalog-button {
+        display: unset;
+    }
+    #burger-menu-container {
+        margin-left: auto;
+    }
+    #burger-menu-close {
+        left: unset;
+        right: 18px;
+    }
     .header-menu {
         display: none;
     }
@@ -382,22 +387,6 @@
     }
     .header-messengers a {
         margin-left: 26px;
-    }
-    .main-advantage {
-        height: 122px;
-    }
-    .popular-section-image img {
-        max-height: 158px;
-        max-width: 222px;
-    }
-}
-@media screen and (max-width: 920px) {
-    #burger-menu-container {
-        margin-left: auto;
-    }
-    #burger-menu-close {
-        left: unset;
-        right: 18px;
     }
     .catalog-button button.main-action {
         margin-left: 30px;
@@ -436,6 +425,18 @@
         order: 2;
         margin-left: 60px;
     }
+    .search {
+        grid-template-columns: minmax(40px, 594px);
+    }
+    .main-advantage {
+        height: 122px;
+    }
+    .popular-section-image img {
+        max-height: 158px;
+        max-width: 222px;
+    }
+}
+@media screen and (max-width: 920px) {
     #main-advantages .container {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
@@ -798,7 +799,7 @@
         margin-left: 7px;
     }
     .contacts-info-map {
-        height: 350px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 539px) {
@@ -831,22 +832,6 @@
     .header-messengers {
         display: none;
     }
-    #catalog-button {
-        display: none;
-    }
-    #mobile-catalog-button {
-        display: unset;
-        padding: 0 12px;
-    }
-    #mobile-catalog-button svg {
-        margin-right: 0;
-    }
-    #mobile-catalog-button span {
-        display: none;
-    }
-    .basket-info {
-        display: none;
-    }
     h2 {
         font-size: 30px;
     }
@@ -869,6 +854,16 @@
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #mobile-catalog-button span {
+        display: none;
+    }
+    #mobile-catalog-button {
+        display: unset;
+        padding: 0 12px;
+    }
+    #mobile-catalog-button svg {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 480px) {
@@ -1084,6 +1079,7 @@
     }
     #burger-menu-container {
         width: 100%;
+        border-radius: 0;
     }
 }
 @media screen and (max-width: 343px) {

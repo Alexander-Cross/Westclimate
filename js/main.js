@@ -171,6 +171,27 @@ window.addEventListener('load', () => {
         document.querySelector('#opened-catalog').classList.toggle('hide');
     }
 
+    //open and close mobile-catalog
+    document.querySelector('#mobile-catalog-button').addEventListener('click', () => {
+        document.querySelector('#opened-mobile-catalog').classList.add('nav-toggled');
+    });
+    document.querySelector('#m-catalog-close').addEventListener('click', () => {
+        document.querySelector('#opened-mobile-catalog').classList.remove('nav-toggled');
+    })
+
+    //mobile catalog functioning
+    const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
+    const backLink = `<li class="nav-item">
+	    <a class="nav-link nav-back-link" href="javascript:;">
+		    Назад
+	    </a>
+    </li>`;
+
+    navExpand.forEach(item => {
+        item.querySelector('.nav-expand-content').insertAdjacentHTML('afterbegin', backLink);
+        item.querySelector('.nav-link').addEventListener('click', () => item.classList.add('active'));
+        item.querySelector('.nav-back-link').addEventListener('click', () => item.classList.remove('active'));
+    })
 
     //menu in opened-catalog
     let subCategoriesSlideIndex = 0;
