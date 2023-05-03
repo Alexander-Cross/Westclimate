@@ -956,6 +956,12 @@
     .recommended-good-name {
         max-width: 280px;
     }
+    .searched-item-price {
+        margin-right: 15px;
+    }
+    .search-results-list-item-img img {
+        max-height: 70px;
+    }
 
 }
 @media screen and (max-width: 459px) {
@@ -980,8 +986,9 @@
     .actions-swiper-next {
         right: -25px;
     }
-
-
+    .search-results-list-item-img {
+        width: 90px;
+    }
 }
 /*main point*/
 @media screen and (max-width: 425px) {
@@ -1064,9 +1071,51 @@
     .basket-info {
         display: none;
     }
+    .search-results-list-category-icon, .search-results-list-item-checkbox {
+        width: 40px;
+    }
+    .search-results-list-item-img {
+        width: 80px;
+    }
+    .searched-item,
+    .searched-item-price-section {
+        margin-left: 15px;
+    }
+    .search-results-list-item {
+        position: relative;
+    }
+    .searched-item-code {
+        position: absolute;
+        z-index: 1;
+        bottom: 20px;
+        left: 13px;
+    }
+    .searched-item-name {
+        margin-bottom: 0;
+    }
+    .searched-item-name-and-code {
+        margin-bottom: 4px;
+    }
+    .searched-item-char {
+        margin-bottom: 8px;
+    }
+    .searched-item-price {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+    .searched-item-buy button {
+        width: 110px;
+        height: 35px;
+    }
+    .search-results-list-item {
+        padding: 16px 0;
+    }
+    .searched-item-price-section {
+        align-items: flex-end;
+    }
 }
 /*main point*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
     .main-screen-swiper-slide .container .slider-subheading {
         height: 90px;
     }
@@ -1139,6 +1188,31 @@
     #burger-menu-container {
         width: 100%;
         border-radius: 0;
+    }
+    .searched-item-price-section {
+        flex-direction: column;
+    }
+    .searched-item-char {
+        display: none;
+    }
+    .search-results-list-category-icon, .search-results-list-item-checkbox {
+        width: 36px;
+    }
+    .searched-item-name {
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+    .searched-item-price {
+        margin-right: 0;
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+    .searched-item-price-section {
+        align-items: flex-start;
+    }
+    .searched-item-buy button{
+        height: 33px;
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 343px) {

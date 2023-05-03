@@ -1002,7 +1002,7 @@ a.second-subcategory:visited {
     width: 100%;
     height: calc(100% - 149px);
     background: rgba(8, 8, 8, 0.78);
-    /*display: none;*/
+    display: none;
 }
 #search-results .container {
     background: white;
@@ -1114,6 +1114,7 @@ a.second-subcategory:visited {
 }
 .searched-item-name {
     font-family: var(--main-font-semibold);
+    line-height: 1.2;
 }
 .searched-item-code {
     color: #818181;
