@@ -158,40 +158,52 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 300;
     top: 0;
     left: 0;
+    box-sizing: border-box;
+    padding: 30px;
     display: none;
+    background: white;
+    transition: .4s;
+    transform: translateX(100%);
+}
+#burger-menu.burger-menu-toggled {
+    transform: translateX(0);
+}
+.burger-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-family: var(--main-font-bold);
+    margin-bottom: 20px;
 }
 #burger-menu-close {
-    position: absolute;
-    z-index: 10;
-    top: 18px;
-    left: 18px;
-}
-#burger-menu-close svg:hover {
     cursor: pointer;
-    fill: #3a3a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#burger-menu-container {
-    text-align: center;
-    padding: 50px 0 25px 0;
-    width: 300px;
+#burger-menu-close svg {
+    fill: var(--text);
+}
+#burger-menu ul li {
+    list-style-type: none;
+}
+#burger-menu ul li a {
+    display: block;
     box-sizing: border-box;
-    border: 2px solid var(--action);
-    background: white;
-    border-radius: 15px;
-}
-.burger-menu-option {
-    margin-bottom: 25px;
-}
-.burger-menu-option a {
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+    color: var(--text);
     text-decoration: none;
+    font-family: var(--main-font-semibold);
+}
+#burger-menu ul li a:visited {
     color: var(--text);
 }
-.burger-menu-option a:visited {
-    color: var(--text);
-}
+
 .burger-layer {
     height: 3px;
     border-radius: 12px;

@@ -40,17 +40,12 @@ window.addEventListener('load', () => {
     }
 
     // open-close burger-menu
-    document.querySelector('#burger-menu-close').addEventListener('click', closeBurgerMenu);
-    document.querySelector('#burger').addEventListener('click', openBurgerMenu);
-    document.querySelector('#burger-menu').addEventListener('click', (e) => {
-        if (e.target.id === 'burger-menu') closeBurgerMenu();
+    document.querySelector('#burger').addEventListener('click', () => {
+        document.querySelector('#burger-menu').classList.add('burger-menu-toggled');
     });
-    function closeBurgerMenu() {
-        document.querySelector('#burger-menu').style.display = 'none';
-    }
-    function openBurgerMenu() {
-        document.querySelector('#burger-menu').style.display = 'block';
-    }
+    document.querySelector('#burger-menu-close').addEventListener('click', () => {
+        document.querySelector('#burger-menu').classList.remove('burger-menu-toggled');
+    });
 
 
     // ripple effect

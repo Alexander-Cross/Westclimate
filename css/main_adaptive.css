@@ -425,6 +425,9 @@
         order: 2;
         margin-left: 60px;
     }
+    #burger-menu {
+        display: unset;
+    }
     .search {
         grid-template-columns: minmax(40px, 594px);
     }
@@ -1004,6 +1007,9 @@
     }
     .news-swiper-prev, .news-swiper-next {
         top: 104px;
+    }
+    .basket-info {
+        display: none;
     }
 }
 /*main point*/
