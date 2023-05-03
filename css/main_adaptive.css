@@ -438,6 +438,11 @@
         max-height: 158px;
         max-width: 222px;
     }
+    #search-results .container {
+        max-width: unset;
+        width: 100%;
+        margin: 0;
+    }
 }
 @media screen and (max-width: 920px) {
     #main-advantages .container {
@@ -543,6 +548,17 @@
     .footer-info-inn {
         text-align: center;
     }
+    .searched-item-name-and-code {
+        display: flex;
+        flex-direction: column;
+    }
+    .searched-item-name {
+        margin-bottom: 5px;
+    }
+    .searched-item-code {
+        margin: 0;
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 768px) {
     .recommended-goods h2.section-header {
@@ -613,6 +629,32 @@
     .reviews-wrap-block {
         width: 1174px;
     }
+    .searched-item-and-price {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .searched-item-char {
+        margin-bottom: 10px;
+    }
+    .searched-item-price {
+        margin-right: 30px;
+    }
+    .searched-item {
+        margin-right: 20px;
+    }
+    .searched-item-price-section {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 22px;
+    }
+    .searched-item-buy .basket-button {
+        margin-top: 0;
+    }
+    .searched-item-buy button {
+        width: 126px;
+        height: 38px;
+    }
 
 }
 @media screen and (max-width: 690px) {
@@ -648,6 +690,11 @@
     #action-block-3,
     #action-block-4 {
         background-position: center;
+    }
+    .searched-item-char {
+        min-height: unset;
+        height: 15px;
+        overflow: hidden;
     }
 }
 @media screen and (max-width: 659px) {
@@ -829,6 +876,12 @@
     .footer-info-inn span {
         display: block;
         margin-bottom: 10px;
+    }
+    .search-checkbox-description {
+        display: none;
+    }
+    .search-results-list-category-icon, .search-results-list-item-checkbox {
+        width: 50px;
     }
 }
 @media screen and (max-width: 520px) {

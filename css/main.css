@@ -1002,7 +1002,7 @@ a.second-subcategory:visited {
     width: 100%;
     height: calc(100% - 149px);
     background: rgba(8, 8, 8, 0.78);
-    display: none;
+    /*display: none;*/
 }
 #search-results .container {
     background: white;
@@ -1028,7 +1028,6 @@ a.second-subcategory:visited {
 .search-results-list-category:hover svg circle, .search-results-list-category:hover svg path {
     stroke: #808080;
 }
-
 .search-results-list-item:last-child {
     border-bottom: none;
     border-radius: 0 0 8px 8px;
@@ -1055,7 +1054,6 @@ a.second-subcategory:visited {
 }
 .search-results-list-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 18px 0;
     cursor: pointer;
@@ -1087,21 +1085,25 @@ a.second-subcategory:visited {
 .search-results-list-item-img {
     width: 102px;
     text-align: center;
+    flex-shrink: 0;
 }
 .search-results-list-item-img img {
     max-width: 100%;
     max-height: 80px;
 }
+.searched-item-and-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .searched-item {
     margin-left: 22px;
 }
-.searched-item-info-section {
-    display: flex;
-    align-items: center;
-}
 .searched-item-price-section {
     flex-shrink: 0;
-    margin-right: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .searched-item-category {
     color: #818181;
@@ -1128,7 +1130,7 @@ a.second-subcategory:visited {
     font-size: 14px;
 }
 .searched-item-price {
-    font-size: 22px;
+    font-size: 20px;
     font-family: var(--main-font-semibold);
 }
 .searched-item-buy button {
