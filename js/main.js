@@ -387,7 +387,7 @@ window.addEventListener('load', () => {
             }
             else {
                 e.currentTarget.children[0].innerText = 'Читать целиком';
-                e.currentTarget.children[1].style.rotate = 'unset';
+                e.currentTarget.children[1].style.rotate = '0deg';
                 e.currentTarget.parentNode.previousElementSibling.classList.add('curbed');
             }
         })
