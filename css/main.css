@@ -48,7 +48,9 @@
     --headers-font-medium: "Gilroy Medium";
     --headers-font-semibold: "Gilroy Semibold";
     --section-gap-desktop: 140px;
+    --section-gap-mobile: 110px;
     --section-header-desktop-mbottom: 60px;
+    --section-header-mobile-mbottom: 50px;
     --section-sub-header-desktop-mbottom: 50px;
     --section-header-w-sub-desktop-mbottom: 28px;
 }
@@ -1293,8 +1295,8 @@ a.second-subcategory:visited {
     font-size: 22px;
     margin-bottom: 23px;
     width: 100%;
-    height: 26px;
-    overflow-x: hidden;
+    height: 28px;
+    overflow: hidden;
 }
 .good-price-before-discount {
     font-size: 18px;

@@ -1139,6 +1139,14 @@
         width: 340px;
         padding: 20px 20px;
     }
+    .main-screen-swiper-slide .container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    h2.section-header {
+        margin-top: var(--section-gap-mobile);
+        margin-bottom: var(--section-header-mobile-mbottom);
+    }
 }
 /*main point*/
 @media screen and (max-width: 374px) {
@@ -1180,7 +1188,7 @@
         height: 70px;
     }
     .recommended-goods-swiper-next, .recommended-goods-swiper-prev {
-        top: 482px;
+        top: 467px;
     }
     .recommended-good-char-name {
         min-width: 206px;
