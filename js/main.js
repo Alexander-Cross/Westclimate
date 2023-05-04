@@ -170,12 +170,19 @@ window.addEventListener('load', () => {
 
     //open-catalog
     let catalogButton = document.querySelector('#catalog-button');
+    catalogButton.addEventListener('mouseenter', openDesktopCatalog);
     catalogButton.addEventListener('click', openCloseDesktopCatalog);
     function openCloseDesktopCatalog() {
         document.querySelector('#open-catalog-icon').classList.toggle('hide');
         document.querySelector('#close-catalog-icon').classList.toggle('hide');
         document.querySelector('#opened-catalog').classList.toggle('hide');
     }
+    function openDesktopCatalog() {
+        document.querySelector('#open-catalog-icon').classList.add('hide');
+        document.querySelector('#close-catalog-icon').classList.remove('hide');
+        document.querySelector('#opened-catalog').classList.remove('hide');
+    }
+
 
     //open and close mobile-catalog
     document.querySelector('#mobile-catalog-button').addEventListener('click', () => {
