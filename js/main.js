@@ -30,6 +30,7 @@ window.addEventListener('load', () => {
         }
     }
     function openOrderCallPopup() {
+        closeDesktopCatalog();
         document.querySelector('#order-call-popup').style.display = 'flex';
     }
     function openThankYouPopup() {
@@ -181,6 +182,11 @@ window.addEventListener('load', () => {
         document.querySelector('#open-catalog-icon').classList.add('hide');
         document.querySelector('#close-catalog-icon').classList.remove('hide');
         document.querySelector('#opened-catalog').classList.remove('hide');
+    }
+    function closeDesktopCatalog() {
+        document.querySelector('#open-catalog-icon').classList.remove('hide');
+        document.querySelector('#close-catalog-icon').classList.add('hide');
+        document.querySelector('#opened-catalog').classList.add('hide');
     }
 
 

@@ -875,7 +875,7 @@ a.second-subcategory:visited {
     color: var(--text);
 }
 .main-subcategory:hover, .second-subcategory:hover {
-    color: #0e5eb2;
+    color: var(--action-dark);
 }
 .second-subcategory {
     font-size: 15px;
