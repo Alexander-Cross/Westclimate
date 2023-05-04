@@ -97,7 +97,7 @@ window.addEventListener('load', () => {
     orderCallForm.onsubmit = async (e) => {
         e.preventDefault();
         try {
-            let response = await fetch('https://webhook.site/442c06ef-b200-44c2-8436-9552a9d8ea32', {
+            let response = await fetch('https://webhook.site/6922f975-ce5d-4b08-a5d0-125e018f7d64', {
                 method: 'POST',
                 body: new FormData(orderCallForm)
             });
@@ -115,6 +115,17 @@ window.addEventListener('load', () => {
             console.log (e.message);
         }
     }
+
+    // open mobile-phone-popup
+    document.querySelectorAll('.mobile-phone')[0].addEventListener('click', () => {
+        document.querySelector('#mobile-phone-popup').style.display = 'flex';
+    })
+    // open order-call popup from mobile-phone-popup
+    document.querySelector('#mph-order-call-btn').addEventListener('click', () => {
+        document.querySelector('#mobile-phone-popup').style.display = 'none';
+        openOrderCallPopup();
+    })
+
 
     //search form submit
     let searchForm = document.querySelector('#search-form');
@@ -347,7 +358,7 @@ window.addEventListener('load', () => {
             data.append('amount', one_click_good.amount);
             data.append('price', one_click_good.price);
             console.log(data);
-            let response = await fetch('https://webhook.site/442c06ef-b200-44c2-8436-9552a9d8ea32', {
+            let response = await fetch('https://webhook.site/6922f975-ce5d-4b08-a5d0-125e018f7d64', {
                 method: 'POST',
                 body: data
             });

@@ -250,8 +250,13 @@
     .popup-fon {
         align-items: flex-start;
         height: 100%;
+        overflow-y: auto;
         padding-top: 60px;
     }
+    .popup-fon .popup-container {
+        margin-bottom: 200px;
+    }
+
 }
 /*main point*/
 @media screen and (max-width: 1024px) {
@@ -856,6 +861,10 @@
     .contacts-info-map {
         height: 300px;
     }
+    .popup-fon .popup-container {
+        width: 430px;
+        padding: 34px 40px;
+    }
 }
 @media screen and (max-width: 539px) {
     .popular-section .about-section {
@@ -967,6 +976,10 @@
     .search-results-list-item-img img {
         max-height: 70px;
     }
+    .popup-fon .popup-container {
+        width: 410px;
+        padding: 30px 30px;
+    }
 
 }
 @media screen and (max-width: 459px) {
@@ -993,6 +1006,10 @@
     }
     .search-results-list-item-img {
         width: 90px;
+    }
+    .popup-fon .popup-container {
+        width: 380px;
+        padding: 30px 30px;
     }
 }
 /*main point*/
@@ -1118,6 +1135,10 @@
     .searched-item-price-section {
         align-items: flex-end;
     }
+    .popup-fon .popup-container {
+        width: 340px;
+        padding: 20px 20px;
+    }
 }
 /*main point*/
 @media screen and (max-width: 374px) {
@@ -1218,6 +1239,10 @@
     .searched-item-buy button{
         height: 33px;
         font-size: 15px;
+    }
+    .popup-fon .popup-container {
+        width: 290px;
+        padding: 15px 15px;
     }
 }
 @media screen and (max-width: 343px) {
