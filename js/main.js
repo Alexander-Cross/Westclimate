@@ -382,12 +382,12 @@ window.addEventListener('load', () => {
         reviewActionWrappers[i].addEventListener('click', (e) => {
             if (e.currentTarget.children[0].innerText === 'Читать целиком') {
                 e.currentTarget.children[0].innerText = 'Свернуть назад';
-                e.currentTarget.children[1].style.rotate = '-90deg';
+                e.currentTarget.children[1].style.transform = 'rotate(-90deg)';
                 e.currentTarget.parentNode.previousElementSibling.classList.remove('curbed');
             }
             else {
                 e.currentTarget.children[0].innerText = 'Читать целиком';
-                e.currentTarget.children[1].style.rotate = '0deg';
+                e.currentTarget.children[1].style.transform = 'rotate(0deg)';
                 e.currentTarget.parentNode.previousElementSibling.classList.add('curbed');
             }
         })
