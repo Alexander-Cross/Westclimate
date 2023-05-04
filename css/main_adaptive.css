@@ -169,7 +169,7 @@
         padding: 0;
     }
 
-    .header-bar-mobile .header-basket-amount {
+    .header-bar-mobile .basket-amount {
         bottom: -6px;
     }
 
@@ -246,6 +246,11 @@
 
     .footer-nav-col {
         width: 200px;
+    }
+    .popup-fon {
+        align-items: flex-start;
+        height: 100%;
+        padding-top: 60px;
     }
 }
 /*main point*/
@@ -1104,7 +1109,7 @@
         font-size: 18px;
     }
     .searched-item-buy button {
-        width: 110px;
+        width: 122px;
         height: 35px;
     }
     .search-results-list-item {

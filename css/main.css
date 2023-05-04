@@ -1272,9 +1272,6 @@ a.second-subcategory:visited {
 .good-add-to {
     margin-bottom: 20px;
 }
-.good-add-to svg {
-    fill: #a8b8c1;
-}
 .good-add-to:hover {
     cursor: pointer;
 }
@@ -1284,10 +1281,12 @@ a.second-subcategory:visited {
 .add-good-to-fav {
     margin-right: 19px;
 }
-.add-good-to-fav.active svg {
-    fill: var(--action);
+.add-good-to-compare svg,
+.add-good-to-fav svg {
+    fill: #a8b8c1;
 }
-.add-good-to-compare.active svg {
+.add-good-to-compare.active svg,
+.add-good-to-fav.active svg {
     fill: var(--action);
 }
 .good-price {

@@ -116,7 +116,7 @@ window.addEventListener('load', () => {
         }
     }
 
-    //search form
+    //search form submit
     let searchForm = document.querySelector('#search-form');
     let searchFormInput = document.querySelector('#search-form-input');
     searchForm.onsubmit = async (e) => {
@@ -214,45 +214,86 @@ window.addEventListener('load', () => {
         }
     });
 
-
-    // add to fav and compare in goods cards
-    let addToFav = document.querySelectorAll('.add-good-to-fav');
-    let addToCompare = document.querySelectorAll('.add-good-to-compare');
-    for (let i = 0; i < addToFav.length; i++) {
-        addToFav[i].addEventListener('click', (e) => {
-            let favAmount = document.querySelector('#header-fav-amount');    //temporary line
-            let currentFavAmount = parseInt(favAmount.innerText);                    //temporary line
-            if (!e.currentTarget.classList.contains('active')) currentFavAmount++;   //temporary line
-            else currentFavAmount--;                                                 //temporary line
-            favAmount.innerText = currentFavAmount.toString();                       //temporary line
-            e.currentTarget.classList.toggle('active');
-        })
+    // add to compare and fav
+    // add to compare in search results
+    let searchResultCheckboxes = document.querySelectorAll('.s-result-checkbox');
+    for (let i = 0; i < searchResultCheckboxes.length; i++) {
+        searchResultCheckboxes[i].addEventListener('change', (e) => {
+           if (e.target.checked) addOneToCompare();
+           else delOneFromCompare();
+        });
     }
+    function addOneToCompare() {
+        let currentAmount = parseInt(document.querySelector('#header-compare-amount').innerText);
+        currentAmount++;
+        document.querySelectorAll('.compare-amount').forEach(v => v.innerText = currentAmount.toString());
+    }
+    function delOneFromCompare() {
+        let currentAmount = parseInt(document.querySelector('#header-compare-amount').innerText);
+        if (currentAmount > 0) currentAmount--;
+        document.querySelectorAll('.compare-amount').forEach(v => v.innerText = currentAmount.toString());
+    }
+
+    // add to compare in goods
+    let addToCompare = document.querySelectorAll('.add-good-to-compare');
     for (let i = 0; i < addToCompare.length; i++) {
         addToCompare[i].addEventListener('click', (e) => {
-            let compareAmount = document.querySelector('#header-compare-amount');    //temporary line
-            let currentCompareAmount = parseInt(compareAmount.innerText);                    //temporary line
-            if (!e.currentTarget.classList.contains('active')) currentCompareAmount++;       //temporary line
-            else currentCompareAmount--;                                                     //temporary line
-            compareAmount.innerText = currentCompareAmount.toString();                       //temporary line
-            e.currentTarget.classList.toggle('active');
+            if (!e.currentTarget.classList.contains('active')) {
+                addOneToCompare();
+                e.currentTarget.classList.add('active');
+                e.currentTarget.children[0].style.fill='#1976d2';
+            } else {
+                delOneFromCompare();
+                e.currentTarget.classList.remove('active');
+                e.currentTarget.children[0].style.fill='#a8b8c1';
+            }
         })
     }
 
-    // click on in basket button
+    // add to fav in goods
+    let addToFav = document.querySelectorAll('.add-good-to-fav');
+    for (let i = 0; i < addToFav.length; i++) {
+        addToFav[i].addEventListener('click', (e) => {
+            if (!e.currentTarget.classList.contains('active')) {
+                addOneToFav();
+                e.currentTarget.classList.add('active');
+                e.currentTarget.children[0].style.fill='#1976d2';
+            } else {
+                delOneFromFav();
+                e.currentTarget.classList.remove('active');
+                e.currentTarget.children[0].style.fill='#a8b8c1';
+            }
+        })
+    }
+    function addOneToFav() {
+        let currentAmount = parseInt(document.querySelector('#header-fav-amount').innerText);
+        currentAmount++;
+        document.querySelectorAll('.fav-amount').forEach(v => v.innerText = currentAmount.toString());
+    }
+    function delOneFromFav() {
+        let currentAmount = parseInt(document.querySelector('#header-fav-amount').innerText);
+        if (currentAmount > 0) currentAmount--;
+        document.querySelectorAll('.fav-amount').forEach(v => v.innerText = currentAmount.toString());
+    }
+
+
+
+
+
+    // add to basket
     let basketButtons = document.querySelectorAll('.basket-button');
     for (let i = 0; i < basketButtons.length; i++) {
         basketButtons[i].addEventListener('click', (e) => {
             if (!e.currentTarget.classList.contains('active')) {
                 e.currentTarget.classList.add('active');
                 e.currentTarget.querySelector('.in-basket-text').innerText = 'В корзине';
-                document.querySelector('.basket').classList.add('active');
-                let currentAmountInBasket = parseInt(document.querySelector('#header-basket-amount').innerText); //temporary line
-                currentAmountInBasket+=1;                                                                                //temporary line
-                document.querySelector('#header-basket-amount').innerText = currentAmountInBasket.toString();    //temporary line
-                document.querySelector('.basket-total').innerText = '32 000 руб.';                               //temporary line
+                document.querySelectorAll('.basket').forEach(v => v.classList.add('active'));
+                let currentAmountInBasket = parseInt(document.querySelector('#header-basket-amount').innerText);                                    //temporary line
+                currentAmountInBasket+=1;                                                                                                                   //temporary line
+                document.querySelectorAll('.basket-amount').forEach(v => v.innerText = currentAmountInBasket.toString());                  //temporary line                 //temporary line
+                document.querySelectorAll('.basket-total').forEach(v => v.innerText = '32 000 руб.');                                      //temporary line
             }
-        })
+        });
     }
 
     //order-in-one-click
