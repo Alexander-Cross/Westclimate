@@ -923,6 +923,12 @@ a.second-subcategory:visited {
     align-items: center;
     justify-content: space-between;
 }
+.menu-in-catalog-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: var(--main-font-bold);
+}
 #opened-mobile-catalog ul {
     margin: 0;
 }
