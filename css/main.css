@@ -924,10 +924,10 @@ a.second-subcategory:visited {
     justify-content: space-between;
 }
 .menu-in-catalog-header {
-    font-size: 24px;
-    margin-bottom: 20px;
     margin-top: 50px;
+    font-size: 24px;
     font-family: var(--main-font-bold);
+    margin-bottom: 20px;
 }
 #opened-mobile-catalog ul {
     margin: 0;
