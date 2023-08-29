@@ -305,6 +305,72 @@ input[type="number"]::-webkit-inner-spin-button {
 .showed-goods .good {
     margin-bottom: 24px;
 }
+.showed-goods.show-in-a-row .good{
+    width: 100%;
+    display: flex;
+    padding: 24px;
+}
+.showed-goods.show-in-a-row .good>.good-link {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showed-goods.show-in-a-row .good .good-image {
+    height: 100%;
+    width: 100%;
+}
+.showed-goods.show-in-a-row .good .good-image img {
+    max-width: 100%;
+    max-height: 210px;
+}
+.showed-goods.show-in-a-row .good .good-name-and-chars {
+    box-sizing: border-box;
+    padding: 0 24px;
+    width: 50%;
+}
+.showed-goods.show-in-a-row .good-chars {
+    max-width: 355px;
+}
+.showed-goods.show-in-a-row .good .good-name-and-chars .good-name {
+    height: 19px;
+}
+.showed-goods.show-in-a-row .good-char:last-child {
+    margin-bottom: 0;
+}
+.showed-goods.show-in-a-row .good .good-actions {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.showed-goods.show-in-a-row .good .good-actions .good-price {
+    order: 1;
+    margin-bottom: 0;
+}
+.showed-goods.show-in-a-row .good .good-actions .good-add-to {
+    order: 2;
+    margin-bottom: 0;
+}
+.showed-goods.show-in-a-row .good .good-actions .good-actions-buttons {
+    order: 3;
+}
+.showed-goods.show-in-a-row .good-price {
+    flex-direction: column;
+    overflow: unset;
+    height: unset;
+    align-items: flex-start;
+}
+.showed-goods.show-in-a-row .good-stock-price {
+    order: 2;
+    margin-bottom: 0;
+}
+.showed-goods.show-in-a-row .good-price-before-discount {
+    margin-left: 0;
+    flex-shrink: 0;
+    order: 1;
+    margin-bottom: 5px;
+}
 .pagination {
     display: flex;
     justify-content: center;
@@ -348,6 +414,46 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination-link,
 .pagination-dots {
     padding-top: 3px;
+}
+
+
+
+
+
+/*adaptive*/
+@media screen and (max-width: 1355px) {
+    .section-filters {
+        width: 280px;
+    }
+    .showed-goods .good {
+        width: 32%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .good-image img {
+        max-width: 244px;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .showed-goods .good {
+        width: 48%;
+    }
+    .good-image img {
+        max-width: 264px;
+    }
+    .showed-goods.show-in-a-row .good>.good-link {
+        width: 27%;
+    }
+    .showed-goods.show-in-a-row .good .good-name-and-chars {
+        width: 50%;
+        padding: 0 30px;
+    }
+    .showed-goods.show-in-a-row .good .good-actions {
+        width: 23%;
+    }
+}
+@media screen and (max-width: 1119px) {
+
 }
 
 

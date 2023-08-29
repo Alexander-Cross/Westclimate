@@ -327,10 +327,14 @@ window.addEventListener('load', () => {
     let oneClickButtons = document.querySelectorAll('.in-one-click');
     for (let i = 0; i < oneClickButtons.length; i++) {
         oneClickButtons[i].addEventListener('click', (e) => {
-            one_click_good.category = e.currentTarget.parentNode.parentNode.children[0].children[1].innerText;
-            one_click_good.name = e.currentTarget.parentNode.parentNode.children[0].children[2].innerText;
-            one_click_good.code = e.currentTarget.parentNode.parentNode.children[0].children[3].children[0].innerText;
-            one_click_good.price = e.currentTarget.parentNode.parentNode.children[3].children[0].innerText;
+            one_click_good.category = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[0].children[0].innerText;
+            console.log(one_click_good.category);
+            one_click_good.name = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[0].children[1].innerText;
+            console.log(one_click_good.name);
+            one_click_good.code = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[1].children[0].innerText;
+            console.log(one_click_good.code);
+            one_click_good.price = e.currentTarget.parentNode.parentNode.parentNode.children[1].children[0].children[0].innerText;
+            console.log(one_click_good.price);
             one_click_good.amount = 1;
             document.querySelector('#in-one-click-desired-amount').innerText = '1';
             document.querySelector('#in-one-click-popup-good-category').innerText = one_click_good.category;
@@ -360,7 +364,7 @@ window.addEventListener('load', () => {
         document.querySelector('#in-one-click-price-numbers').innerText = (one_click_good.amount * parseInt(one_click_good.price.replace(/ /g, ""))).toLocaleString();
     });
 
-    // in one click order
+    // in one click send order
     let inOneClickPopupForm = document.querySelector('#in-one-click-popup-form');
     inOneClickPopupForm.onsubmit = async (e) => {
         e.preventDefault();
@@ -390,6 +394,8 @@ window.addEventListener('load', () => {
         }
     }
 
+
+    //reviews
     let reviewActionWrappers = document.querySelectorAll('.review-action-wrapper');
     for (let i = 0; i < reviewActionWrappers.length; i++) {
         reviewActionWrappers[i].addEventListener('click', (e) => {

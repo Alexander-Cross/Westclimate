@@ -1278,6 +1278,8 @@ button.main-action {
     width: 100%;
     height: 28px;
     overflow: hidden;
+    display: flex;
+    align-items: flex-end;
 }
 .good-price-before-discount {
     font-size: 18px;

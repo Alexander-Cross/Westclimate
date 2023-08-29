@@ -154,12 +154,14 @@ fastFilters.forEach((filter) => filter.addEventListener('click', (e) => e.target
 
 //view-rows, view-cols
 let viewTypes = document.querySelectorAll('.view-type');
+const showedGoods = document.querySelector('.showed-goods');
 viewTypes.forEach((type) => type.addEventListener('click', (e) => {
     if (!e.currentTarget.classList.contains('active')) {
         for (let i = 0; i < viewTypes.length; i++) {
             viewTypes[i].classList.remove('active');
         }
         e.currentTarget.classList.add('active');
+        showedGoods.classList.toggle('show-in-a-row');
     }
 }));
 
