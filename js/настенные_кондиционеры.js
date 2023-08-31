@@ -150,7 +150,7 @@ for (let i = 0; i < noiseNumbersInputs.length; i++) {
 
 //fast filters
 let fastFilters = document.querySelectorAll('.fast-filter');
-fastFilters.forEach((filter) => filter.addEventListener('click', (e) => e.target.classList.toggle('active')));
+fastFilters.forEach((filter) => filter.addEventListener('click', (e) => e.currentTarget.classList.toggle('active')));
 
 //view-rows, view-cols
 let viewTypes = document.querySelectorAll('.view-type');
@@ -164,6 +164,15 @@ viewTypes.forEach((type) => type.addEventListener('click', (e) => {
         showedGoods.classList.toggle('show-in-a-row');
     }
 }));
+
+
+// open-close all-filters
+document.querySelector('#show-all-filters').addEventListener('click', () => {
+    document.querySelectorAll('.section-filters')[0].classList.add('section-filters-toggled');
+});
+document.querySelector('#section-filters-close').addEventListener('click', () => {
+    document.querySelectorAll('.section-filters')[0].classList.remove('section-filters-toggled');
+});
 
 //pagination page links
 let paginationLinks = document.querySelectorAll('.pagination-link');
