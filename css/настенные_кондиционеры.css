@@ -574,6 +574,9 @@ input[type="number"]::-webkit-inner-spin-button {
     .showed-goods.show-in-a-row .good .good-name-and-chars {
         width: 60%;
     }
+    .good-name {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 768px) {
 

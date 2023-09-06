@@ -1,0 +1,357 @@
+.g-card-name {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.g-card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.g-card-info-photos {
+    width: 471px;
+}
+.g-card-main-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 332px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.g-card-minor-filters-marks {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.g-card-main-photo img {
+    max-width: 75%;
+    max-height: 75%;
+}
+.g-card-additional-photos {
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+    padding-right: 10px;
+}
+.additional-photo-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c5c9cc;
+    border-radius: 8px;
+    height: 110px;
+}
+.additional-photo-thumb:hover {
+    border-color: var(--action);
+    cursor: pointer;
+}
+.additional-photo-thumb img {
+    max-width: 75%;
+    max-height: 75%
+}
+.control-wrap {
+    width: 100%;
+    position: relative;
+}
+.thumbs-swiper-prev,
+.thumbs-swiper-next {
+    background: var(--background);
+    border: 1px solid #c5c9cc;
+}
+.thumbs-swiper-prev svg,
+.thumbs-swiper-next svg {
+    fill: var(--text);
+}
+.thumbs-swiper-prev:hover,
+.thumbs-swiper-next:hover {
+    border-color: var(--action);
+}
+.thumbs-swiper-prev:hover svg,
+.thumbs-swiper-next:hover svg {
+    fill: white;
+}
+.thumbs-swiper-prev {
+    left: -12px;
+    top: 43px;
+}
+.thumbs-swiper-next {
+    right: -8px;
+    top: 43px;
+}
+.g-card-info-chars {
+    width: 354px;
+}
+.g-card-info-chars-variants {
+    margin-bottom: 32px;
+}
+.g-card-info-chars-heading {
+    font-size: 18px;
+    font-family: var(--main-font-semibold);
+    margin-bottom: 22px;
+}
+.variants-options {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+.variant-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #cbcdcf;
+    border-radius: 8px;
+    line-height: 1;
+    margin-bottom: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: var(--main-font-semibold);
+}
+.variant-option:last-child {
+    margin-right: 0;
+}
+.variant-option.active,
+.variant-option:hover {
+    background: var(--action);
+    border-color: var(--action);
+    color: white;
+}
+.g-card-info-chars-lines .char-line {
+    display: flex;
+    margin-bottom: 7px;
+}
+.g-card-info-chars-lines .char-line .char-line-name {
+    width: 260px;
+}
+.link-to-all-chars {
+    margin-top: 8px;
+}
+.link-to-all-chars a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--main-font-semibold);
+
+}
+.link-to-all-chars a svg {
+    fill: var(--text);
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.g-card-info-price {
+    width: 325px;
+    padding: 25px 33px;
+    border-radius: 12px;
+    box-shadow: 0 0 7px 1px rgba(197, 201, 204, 0.72);
+}
+.g-card-info-code {
+    font-family: var(--main-font-semibold);
+    font-size: 14px;
+    color: var(--minor-details);
+    margin-bottom: 20px;
+}
+.g-card-info-price-figures {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+.g-card-stock-figures {
+    font-size: 28px;
+    font-family: var(--main-font-bold);
+}
+.g-card-figures-before-discount {
+    font-size: 22px;
+    margin-left: 15px;
+    color: #575f64;
+}
+.g-card-info-price-actions {
+    margin-bottom: 35px;
+}
+.g-card-info-price-actions button {
+    width: 100%;
+    height: 46px;
+}
+.g-card-info-price-action-1 button {
+    box-shadow: 0 2px 5px 0 rgba(25, 118, 210, 0.72);
+    margin-bottom: 15px;
+}
+.g-card-info-price-add-to{
+    display: flex;
+    align-items: center;
+    color: var(--minor-details);
+    margin-bottom: 30px;
+}
+.g-card-info-price-add-to-fav svg,
+.g-card-info-price-add-to-compare svg {
+    fill: var(--minor-details);
+}
+.add-to-text {
+    margin-left: 8px;
+    margin-top: 3px;
+}
+.g-card-info-price-add-to-fav,
+.g-card-info-price-add-to-compare {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.g-card-info-price-add-to-compare {
+    margin-left: 20px;
+}
+.g-card-info-price-links {
+    margin-bottom: 40px;
+}
+.g-card-info-price-link-icon,
+.g-card-info-price-link-text {
+    vertical-align: middle;
+}
+.g-card-info-price-link-icon svg{
+    fill: var(--action-dark);
+    margin-right: 8px;
+}
+.g-card-info-price-link-text {
+    color: var(--text);
+    text-decoration-color: #c5c9cc;
+    cursor: pointer;
+}
+.g-card-info-install-service-link {
+    margin-bottom: 10px;
+}
+.g-card-info-price-messengers {
+    display: flex;
+    justify-content: space-between;
+}
+.g-card-info-price-messenger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e3e5e6;
+    border-radius: 5px;
+    width: 92px;
+    height: 38px;
+    text-decoration: none;
+}
+.gift .container{
+    margin-bottom: 50px;
+    padding: 50px 0;
+    border: 1px solid #02cd9b;
+    border-radius: 12px;
+}
+.gift-heading {
+    font-family: var(--main-font-semibold);
+    font-size: 24px;
+    max-width: 550px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+.gift-heading span {
+    color: #00ab83;
+}
+.gift-equation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gift-main-good,
+.gift-gifted-good {
+    width: 217px;
+}
+.gift-main-good-img img,
+.gift-gifted-good-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.gift-main-good-img,
+.gift-gifted-good-img {
+    width: 217px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.gift-main-good-name,
+.gift-gifted-good-name {
+    margin-bottom: 15px;
+}
+.gift-main-good-price,
+.gift-gifted-good-price,
+.total-with-gift-now {
+    font-size: 22px;
+    font-family: var(--main-font-semibold);
+}
+.gift-equation-signs {
+    margin: 0 55px;
+    font-size: 36px;
+}
+.total-with-gift-before {
+    color: #575f64;
+    margin-bottom: 10px;
+}
+.total-with-gift-now {
+    margin-bottom: 12px;
+}
+.total-with-gift-action button {
+    width: 144px;
+    box-shadow: 0 2px 5px 0 rgba(25, 118, 210, 0.72);
+}
+.g-card-tabs {
+    margin-bottom: 60px;
+}
+.g-card-tabs-options {
+    height: 52px;
+    border-radius: 8px;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.g-card-tabs-option {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 0 40px;
+    cursor: pointer;
+}
+.g-card-tabs-option:first-child{
+    border-radius: 8px 0 0 8px;
+}
+.g-card-tabs-option.active,
+.g-card-tabs-option:hover {
+    background: var(--action);
+    color: white;
+}
+.collapse-text {
+    overflow: hidden;
+    position: relative;
+    max-height: 500px;
+}
+.collapse-text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+    background-image: linear-gradient(to bottom, transparent, var(--background) 95%);
+    cursor: pointer;
+}
+#review-tab-show-more,
+#review-tab-show-less {
+    margin-top: 8px;
+    color: var(--action-dark);
+    font-family: var(--main-font-semibold);
+    cursor: pointer;
+}
+#review-tab-show-less {
+    margin-top: 15px;
+}
+#review-tab-show-more svg,
+#review-tab-show-less svg{
+    fill: var(--action-dark);
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
