@@ -317,9 +317,6 @@ a.service-block:hover {
 .recommended-goods-actions button {
     padding: 0 30px;
 }
-.recommended-goods .swiper-button-big {
-    background: var(--action);
-}
 .recommended-goods-swiper-control {
     position: relative;
 }

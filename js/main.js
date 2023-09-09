@@ -1,3 +1,7 @@
+let one_click_good = {
+    amount: 1
+};
+
 window.addEventListener('load', () => {
     let orderCall = document.querySelectorAll('.order-call');
     for (let i = 0; i < orderCall.length; i++) {
@@ -29,9 +33,14 @@ window.addEventListener('load', () => {
             popups[i].style.display = 'none';
         }
     }
-    function openOrderCallPopup() {
+    function openOrderCallPopup(e) {
         closeDesktopCatalog();
         document.querySelector('#order-call-popup').style.display = 'flex';
+        if (e.currentTarget.classList.contains('consultation-btn')) {
+            document.querySelector('#order-call-btn').innerText = "Заказать консультацию";
+        } else {
+            document.querySelector('#order-call-btn').innerText = "Заказать звонок";
+        }
     }
     function openThankYouPopup() {
         document.querySelector('#thank-you-popup').style.display = 'flex';
@@ -93,12 +102,12 @@ window.addEventListener('load', () => {
         }
     });
 
-    // order-call form
+    // order-call form in popup submit
     let orderCallForm = document.querySelector('#order-call-form');
     orderCallForm.onsubmit = async (e) => {
         e.preventDefault();
         try {
-            let response = await fetch('https://webhook.site/6922f975-ce5d-4b08-a5d0-125e018f7d64', {
+            let response = await fetch('https://webhook.site/a921b8ff-8cbd-4793-8332-b1232624713b', {
                 method: 'POST',
                 body: new FormData(orderCallForm)
             });
@@ -114,6 +123,29 @@ window.addEventListener('load', () => {
             closePopups();
             openErrorPopup();
             console.log (e.message);
+        }
+    }
+
+    // order consultation forms not in a popups
+    let orderConsultationForms = document.querySelectorAll('.order-consultation-form');
+    for (let i = 0; i < orderConsultationForms.length; i++) {
+        orderConsultationForms[i].onsubmit = async (e) => {
+            e.preventDefault();
+            try {
+                let response = await fetch('https://webhook.site/a921b8ff-8cbd-4793-8332-b1232624713b', {
+                    method: 'POST',
+                    body: new FormData(orderConsultationForms[i])
+                });
+                let result = await response;
+                if (result.status === 200 && result.ok) {
+                    openThankYouPopup();
+                } else {
+                    openErrorPopup();
+                }
+            } catch (e) {
+                openErrorPopup();
+                console.log (e.message);
+            }
         }
     }
 
@@ -321,20 +353,13 @@ window.addEventListener('load', () => {
     }
 
     //order-in-one-click
-    let one_click_good = {
-        amount: 1
-    };
     let oneClickButtons = document.querySelectorAll('.in-one-click');
     for (let i = 0; i < oneClickButtons.length; i++) {
         oneClickButtons[i].addEventListener('click', (e) => {
             one_click_good.category = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[0].children[0].innerText;
-            console.log(one_click_good.category);
             one_click_good.name = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[0].children[1].innerText;
-            console.log(one_click_good.name);
             one_click_good.code = e.currentTarget.parentNode.parentNode.parentNode.parentNode.children[1].children[1].children[0].innerText;
-            console.log(one_click_good.code);
             one_click_good.price = e.currentTarget.parentNode.parentNode.parentNode.children[1].children[0].children[0].innerText;
-            console.log(one_click_good.price);
             one_click_good.amount = 1;
             document.querySelector('#in-one-click-desired-amount').innerText = '1';
             document.querySelector('#in-one-click-popup-good-category').innerText = one_click_good.category;
@@ -343,6 +368,7 @@ window.addEventListener('load', () => {
             document.querySelector('#in-one-click-popup').style.display='flex';
         });
     }
+
 
     // - + amount in order-in-one-click
     document.querySelector('#in-one-click-amount-minus').addEventListener('click', () => {
@@ -375,7 +401,7 @@ window.addEventListener('load', () => {
             data.append('amount', one_click_good.amount);
             data.append('price', one_click_good.price);
             console.log(data);
-            let response = await fetch('https://webhook.site/6922f975-ce5d-4b08-a5d0-125e018f7d64', {
+            let response = await fetch('https://webhook.site/a921b8ff-8cbd-4793-8332-b1232624713b', {
                 method: 'POST',
                 body: data
             });

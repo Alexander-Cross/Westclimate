@@ -96,6 +96,20 @@ body {
     max-width: 1296px;
     margin: 0 auto;
 }
+input {
+    height: 46px;
+    border-radius: 12px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid var(--input-default);
+    padding-left: 15px;
+    font-family: var(--main-font-regular);
+    font-size: 16px;
+    margin-right: 20px;
+}
+input:hover, input:focus {
+    border-color: var(--input-focus);
+}
 .dark-section {
     color: white;
     background: var(--dark-fon);
@@ -113,6 +127,28 @@ body {
 }
 .dark-section .swiper-button-small:hover svg {
     fill: var(--action);
+}
+.swiper-button-big {
+    height: 32px;
+    width: 32px;
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    outline: none;
+}
+.swiper-button-big svg {
+    fill: var(--text);
+}
+.swiper-button-big.blue {
+    background: var(--action);
+}
+.swiper-button-big.blue:hover {
+    background: var(--action-dark);
 }
 .white-text {
     color: white;
@@ -1122,19 +1158,7 @@ button.main-action {
     height: 40px;
     margin-top: 8px;
 }
-.swiper-button-big {
-    height: 32px;
-    width: 32px;
-    background: white;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: absolute;
-    z-index: 5;
-    outline: none;
-}
+
 
 /*goods rows*/
 .minor-filters {
@@ -1269,9 +1293,10 @@ button.main-action {
     fill: #a8b8c1;
 }
 .add-good-to-compare.active svg,
-.add-good-to-fav.active svg {
+.add-good-to-fav.active svg{
     fill: var(--action);
 }
+
 .good-price {
     font-size: 22px;
     margin-bottom: 23px;
