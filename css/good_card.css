@@ -614,12 +614,12 @@
     .g-card-info-photos {
         order: 1;
         width: 50%;
-        margin-bottom: 35px;
     }
     .g-card-info-price {
         order: 2;
         width: 40%;
         margin-bottom: 35px;
+        margin-top: 35px;
     }
     .g-card-info-chars {
         order: 3;
@@ -627,7 +627,9 @@
     .g-card-info-price-messenger {
         width: 30%;
     }
-
+    .g-card-main-photo .swiper-button-big {
+        visibility: visible;
+    }
 }
 @media screen and (max-width: 1119px) {
     #consultant {
@@ -802,6 +804,13 @@
     #g-card-photo-popup-prev {
         left: 20px;
     }
+    #g-card-main-photo-arrows-next {
+        right: 0;
+    }
+    #g-card-main-photo-arrows-prev {
+        left: 0;
+    }
+
 }
 @media screen and (max-width: 659px) {
 
