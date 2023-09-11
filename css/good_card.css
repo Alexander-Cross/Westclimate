@@ -810,7 +810,10 @@
     #g-card-main-photo-arrows-prev {
         left: 0;
     }
-
+    .g-card-info-price-action-1 button,
+    .total-with-gift-action button {
+        box-shadow: unset;
+    }
 }
 @media screen and (max-width: 659px) {
 
@@ -899,6 +902,9 @@
     }
     .you-watched-swiper-next {
         right: -25px;
+    }
+    .g-card-info-price {
+        padding: 25px;
     }
 }
 @media screen and (max-width: 374px) {
