@@ -1,6 +1,5 @@
-// thumbs swiper
-
 window.addEventListener('load', () => {
+    // thumbs swiper
     const thumbsSwiper = new Swiper ('.thumbs-swiper', {
         // Optional parameters
         slidesPerView: 3,
