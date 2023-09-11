@@ -105,7 +105,6 @@ input {
     padding-left: 15px;
     font-family: var(--main-font-regular);
     font-size: 16px;
-    margin-right: 20px;
 }
 input:hover, input:focus {
     border-color: var(--input-focus);
@@ -1818,6 +1817,12 @@ footer .about {
     .contact-info-line-start {
         min-width: 242px;
     }
+    .popular-sections-swiper-next.swiper-button-small {
+        right: -30px;
+    }
+    .popular-sections-swiper-prev.swiper-button-small {
+        right: 9px;
+    }
 }
 @media screen and (max-width: 1280px) {
 }
@@ -2228,6 +2233,13 @@ footer .about {
         width: 430px;
         padding: 34px 40px;
     }
+    .popular-sections-swiper-next.swiper-button-small {
+        right: -20px;
+    }
+    .popular-sections-swiper-prev.swiper-button-small {
+        right: 16px;
+    }
+
 }
 @media screen and (max-width: 539px) {
     .footer-info-inn span {
@@ -2240,6 +2252,10 @@ footer .about {
     .search-results-list-category-icon, .search-results-list-item-checkbox {
         width: 50px;
     }
+    .popular-sections-swiper-next.swiper-button-small {
+        right: -30px;
+    }
+
 }
 @media screen and (max-width: 520px) {
     .header-messengers {
@@ -2374,6 +2390,9 @@ footer .about {
     h2.section-header {
         margin-top: var(--section-gap-mobile);
         margin-bottom: var(--section-header-mobile-mbottom);
+    }
+    .popular-sections-swiper-next.swiper-button-small {
+        right: -25px;
     }
 }
 @media screen and (max-width: 374px) {

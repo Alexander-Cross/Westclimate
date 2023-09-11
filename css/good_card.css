@@ -488,9 +488,11 @@
     line-height: 1.3;
     font-family: var(--main-font-semibold);
     max-width: 430px;
+    z-index: 5;
 }
 .g-card-banner-pluses {
     margin-bottom: 10px;
+    z-index: 5;
 }
 .g-card-banner-plus {
     display: flex;
@@ -507,10 +509,12 @@
 }
 #g-card-banner-form input {
     width: 230px;
+    margin-right: 20px;
 }
 #g-card-banner-form .main-action {
     padding-right: 22px;
     padding-left: 22px;
+    z-index: 5;
 }
 .recently-you-watched {
     margin-bottom: 60px;
@@ -569,4 +573,350 @@
 #g-card-photo-popup-next {
     right: 40px;
     top: calc(50% - 16px);
+}
+
+
+
+
+
+
+
+
+
+
+/*adaptive*/
+@media screen and (max-width: 1355px) {
+    .g-card-info-photos {
+        width: 440px;
+    }
+    .g-card-info-price {
+        width: 310px;
+    }
+    .you-watched-swiper-next {
+        right: -30px;
+    }
+    .you-watched-swiper-prev {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .g-card-info-photos {
+        width: 420px;
+    }
+    .g-card-info-price {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1239px) {
+    .g-card-info {
+        flex-wrap: wrap;
+    }
+    .g-card-info-photos {
+        order: 1;
+        width: 50%;
+        margin-bottom: 35px;
+    }
+    .g-card-info-price {
+        order: 2;
+        width: 40%;
+        margin-bottom: 35px;
+    }
+    .g-card-info-chars {
+        order: 3;
+    }
+    .g-card-info-price-messenger {
+        width: 30%;
+    }
+
+}
+@media screen and (max-width: 1119px) {
+    #consultant {
+        width: 530px;
+        bottom: -3px;
+    }
+    .g-card-banner .container {
+        padding: 58px 0 58px 70px;
+    }
+}
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 990px) {
+    .g-card-info-photos {
+        order: 1;
+        width: 52%;
+    }
+    .g-card-info-price {
+        width: 35%;
+    }
+    .gift-equation-signs {
+        margin: 0 25px;
+    }
+    .gift-main-good-img, .gift-gifted-good-img {
+        margin-bottom: 18px;
+    }
+    .block-in-chars-tab-line-name {
+        width: 70%;
+    }
+    .block-in-chars-tab-line-value {
+        width: 30%;
+    }
+    .block-in-chars-tab {
+        margin-right: 20px;
+        width: 45%;
+    }
+    .g-card-banner .container {
+        padding: 45px 0 45px 50px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .g-card-info-photos {
+        width: 50%;
+    }
+    .g-card-info-price {
+        width: 38%;
+    }
+    .g-card-tabs-options {
+        overflow-x: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    }
+    .g-card-tabs-options::-webkit-scrollbar {
+    display: none;
+    }
+    .gift .container {
+        padding: 42px 0;
+    }
+    .g-card-tabs .container {
+        margin-right: 0;
+    }
+    .g-card-tabs .container {
+        margin-right: 20px;
+    }
+    #consultant {
+        width: 470px;
+    }
+    .g-card-banner .container {
+        height: 326px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .g-card-info-photos,
+    .g-card-info-price,
+    .g-card-info-chars {
+        width: 100%;
+    }
+    .g-card-info-price-messenger {
+        height: 48px;
+        border-radius: 8px;
+    }
+    .g-card-info-price-messenger svg {
+        height: 32px;
+        width: 32px;
+    }
+    .additional-photo-thumb {
+        height: 124px;
+    }
+    .thumbs-swiper-prev,
+    .thumbs-swiper-next {
+        top: 50px;
+    }
+    .gift-main-good, .gift-gifted-good,
+    .gift-main-good-img, .gift-gifted-good-img {
+        width: 174px;
+        text-align: center;
+    }
+    .gift-main-good, .gift-gifted-good {
+        width: 174px;
+    }
+    .block-in-chars-tab {
+        margin-right: 0;
+        width: 100%;
+    }
+    #consultant {
+        width: 375px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gift-equation-signs {
+        margin: 0 12px;
+    }
+    .gift .container {
+        padding: 35px 0;
+    }
+    #consultant {
+        width: 279px;
+        bottom: -2px;
+    }
+    .g-card-banner .container {
+        height: 285px;
+        padding: 30px 0 30px 40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .gift-heading {
+        max-width: 500px;
+
+    }
+    .gift-equation {
+        flex-direction: column;
+    }
+    .gift-main-good, .gift-gifted-good,
+    .gift-main-good-img, .gift-gifted-good-img {
+        width: 220px;
+    }
+    .gift-equation-signs {
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
+    .total-with-gift {
+        text-align: center;
+    }
+    .gift .container {
+        padding: 40px 0;
+    }
+    #consultant {
+        display: none;
+    }
+    .g-card-banner .container {
+        padding: 35px;
+        height: unset;
+    }
+    .g-card-banner-heading {
+        margin-bottom: 25px;
+    }
+    .g-card-banner-pluses {
+        margin-bottom: 30px;
+    }
+    .you-watched-swiper-prev {
+        left: -41px;
+        top: 325px;
+    }
+    .you-watched-swiper-next {
+        right: -41px;
+        top: 325px;
+    }
+    #g-card-photo-popup-next {
+        right: 20px;
+    }
+    #g-card-photo-popup-prev {
+        left: 20px;
+    }
+}
+@media screen and (max-width: 659px) {
+
+}
+@media screen and (max-width: 640px) {
+    .g-card-info-price-messenger {
+        border-color: #dadbdc;
+    }
+    #g-card-banner-form {
+        flex-direction: column;
+    }
+    #g-card-banner-form input {
+        margin-bottom: 15px;
+    }
+    #g-card-banner-form input,
+    #g-card-banner-form .main-action {
+        width: 100%;
+    }
+    .you-watched-swiper-next {
+        right: -20px;
+    }
+    .you-watched-swiper-prev {
+        right: 19px;
+    }
+    .you-watched-swiper-prev {
+        left: -30px;
+    }
+    .you-watched-swiper-next {
+        right: -30px;
+    }
+}
+@media screen and (max-width: 520px) {
+    #g-card-photo-popup .popup-container {
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 459px) {
+    .g-card-minor-filters-marks {
+        left: 0;
+    }
+    .additional-photo-thumb {
+        height: 112px;
+    }
+    .thumbs-swiper-prev, .thumbs-swiper-next {
+        top: 43px;
+    }
+    #g-card-photo-popup-next {
+        right: 10px;
+    }
+    #g-card-photo-popup-prev {
+        left: 10px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .g-card-figures-before-discount {
+        font-size: 15px;
+    }
+    .g-card-info-price-add-to {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .g-card-info-price-add-to-fav {
+        margin-bottom: 12px;
+    }
+    .g-card-info-price-add-to-compare {
+        margin-left: 0;
+    }
+    .gift-heading {
+        max-width: 300px;
+    }
+    .g-card-tabs .container {
+        margin-right: 15px;
+    }
+    .g-card-tabs {
+        margin-bottom: 50px;
+    }
+    .you-watched-swiper-prev {
+        left: -25px;
+    }
+    .you-watched-swiper-next {
+        right: -25px;
+    }
+}
+@media screen and (max-width: 374px) {
+    #g-card-banner-form .main-action {
+        height: 60px;
+    }
+    #g-card-photo-popup-next {
+        right: 5px;
+    }
+    #g-card-photo-popup-prev {
+        left: 5px;
+    }
+    .g-card-info-price-figures {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .g-card-figures-before-discount {
+        order: 1;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+    .g-card-stock-figures {
+        order: 2;
+    }
+    .g-card-info-chars-lines .char-line .char-line-name{
+        width: 70%;
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
+    .block-in-chars-tab-line-name {
+        box-sizing: border-box;
+        padding-right: 10px;
+    }
 }
