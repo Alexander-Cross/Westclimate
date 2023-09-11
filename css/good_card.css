@@ -846,6 +846,10 @@
     #g-card-photo-popup .popup-container {
         width: 95vw;
     }
+    .g-card-info-price {
+        box-shadow: unset;
+        border: 1px solid #e3e5e6;
+    }
 }
 @media screen and (max-width: 480px) {
 
@@ -898,9 +902,6 @@
     }
 }
 @media screen and (max-width: 374px) {
-    #g-card-banner-form .main-action {
-        height: 60px;
-    }
     #g-card-photo-popup-next {
         right: 5px;
     }
