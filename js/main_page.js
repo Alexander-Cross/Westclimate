@@ -364,6 +364,5 @@ window.addEventListener('load', () => {
         myMap.geoObjects.add(myPlacemark);
     }
 
-
 });
 

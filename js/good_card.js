@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
         slidesPerView: 3,
         slidesPerGroup: 1,
         // loop: true,
-        speed: 700,
+        speed: 400,
         spaceBetween: 20,
         //
         // // If we need pagination

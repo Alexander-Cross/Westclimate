@@ -456,8 +456,6 @@ window.addEventListener('load', () => {
 });
 
 
-
-
 //mask fo phone-number
 
 window.addEventListener("DOMContentLoaded", function() {

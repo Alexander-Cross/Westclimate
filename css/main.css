@@ -96,7 +96,7 @@ body {
     max-width: 1296px;
     margin: 0 auto;
 }
-input {
+.regular-input {
     height: 46px;
     border-radius: 12px;
     outline: none;
@@ -1755,10 +1755,10 @@ footer .about {
 }
 .breadcrumbs {
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.6;
     color: var(--grey);
     margin-top: 18px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 }
 .breadcrumbs a {
     color: var(--grey);
